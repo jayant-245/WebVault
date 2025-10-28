@@ -84,14 +84,17 @@ webvault/
 - **DuckDuckGo Icons API** for favicons
 
 ---
+## 🖼️ Screenshots
 
-<h2>🖼️ Screenshots</h2>
+**Dashboard**
+![Dashboard](./screenshots/dashboard.png)
 
-<p align="center">
-  <img src="screenshots/dashboard.png" width="30%" alt="Dashboard" />
-  <img src="screenshots/collections.png" width="30%" alt="Collections" />
-  <img src="screenshots/cards.png" width="30%" alt="Cards" />
-</p>
+**Collections**
+![Collections](./screenshots/collections.png)
+
+**Cards**
+![Cards](./screenshots/cards.png)
+
 
 
 
