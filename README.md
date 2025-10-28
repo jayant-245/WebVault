@@ -85,11 +85,14 @@ webvault/
 
 ---
 
-## 🖼️ Screenshots
+<h2>🖼️ Screenshots</h2>
 
-| Dashboard | Collections | Cards |
-|------------|--------------|-------|
-| ![Dashboard](screenshots/dashboard.png) | ![Collections](screenshots/collections.png) | ![Cards](screenshots/cards.png) |
+<p align="center">
+  <img src="screenshots/dashboard.png" width="30%" alt="Dashboard" />
+  <img src="screenshots/collections.png" width="30%" alt="Collections" />
+  <img src="screenshots/cards.png" width="30%" alt="Cards" />
+</p>
+
 
 
 ---
