@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Prism background glows -->
+  <div class="bg-prism prism-a"></div>
+  <div class="bg-prism prism-b"></div>
+
+  <!-- Topbar -->
+  <header class="topbar glass">
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <img src="./16.png" alt="img" style="width: 45px; height: 45px;">
+    </div>
+    <h1 class="brand">WebVault</h1>
+    <div class="search-wrap">
+      <span class="i search"></span>
+      <input id="searchInput" placeholder="Search sites, notes, titles..." />
+    </div>
+    <button id="exportCsv" class="btn">Export CSV</button>
+  </header>
+
+  <div class="app-wrap">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar glass">
+      <div class="sidebar-head">
+        <div class="label">Collections</div>
+        <button id="addCollection" class="add chip">+</button>
+      </div>
+      <nav id="collectionsNav" class="nav"></nav>
+      <div id="activeActions" class="side-actions">
+        <button id="renameCollection" class="chip">Rename</button>
+        <button id="deleteCollection" class="chip danger">Delete</button>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <section class="collection-card glass">
+        <div class="row">
+          <h2 id="colTitle">Collection</h2>
+          <div class="grow"></div>
+          <div class="muted"><span id="countFiltered">0</span> of <span id="countTotal">0</span> items</div>
+          <button class="chip" id="addWebsite2">+ Add website</button>
+        </div>
+      </section>
+
+      <section id="grid" class="grid"></section>
+    </main>
+  </div>
+
+  <template id="collectionBtnTpl">
+    <button class="nav-btn">
+      <span class="i bookmark"></span>
+      <span class="title"></span>
+      <span class="count"></span>
+    </button>
+  </template>
+
+  <template id="cardTpl">
+    <article class="card glass">
+      <div class="card-head">
+        <img class="favicon" />
+        <div class="meta">
+          <a class="title" target="_blank" rel="noreferrer noopener"></a>
+          <div class="domain muted"></div>
+        </div>
+        <div class="grow"></div>
+        <div class="card-tools">
+          <button class="icon-btn edit" title="Edit"><span class="i edit"></span></button>
+          <button class="icon-btn del" title="Remove"><span class="i trash"></span></button>
+        </div>
+      </div>
+      <p class="note"></p>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
