@@ -89,7 +89,8 @@ webvault/
 
 | Dashboard | Collections | Cards |
 |------------|--------------|-------|
-| *(Add screenshots here)* | *(Add screenshots here)* | *(Add screenshots here)* |
+| ![Dashboard](screenshots/dashboard.png) | ![Collections](screenshots/collections.png) | ![Cards](screenshots/cards.png) |
+
 
 ---
 
